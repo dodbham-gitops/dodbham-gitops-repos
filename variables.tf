@@ -11,7 +11,7 @@ variable "owners_aliases" {
   description = "owners aliases file"
 }
 
-variable "vault_token" {
-  description = "dynamically injected vault token"
-  sensitive   = true
-}
+# variable "vault_token" {
+#   description = "dynamically injected vault token"
+#   sensitive   = true
+# }
