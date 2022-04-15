@@ -5,14 +5,20 @@ org_config = {
 }
 
 repositories = {
+  img-updater-bot = {
+    description    = "image layer updater bot, written in node+typescript"
+    base_owners    = ["leads"]
+    base_reviewers = ["leads", "contributors"]
+    visibility     = "public"
+  },
   chalupa-bot = {
     description    = "chalupa discord microservice, written in rust"
     base_owners    = ["leads"]
     base_reviewers = ["leads", "contributors"]
     visibility     = "public"
   }, 
-  chalupa-bot-config = {
-    description    = "chalupa bot deployment config repo"
+  dodbham-app-config = {
+    description    = "deployment config repo for our multiple microservices"
     base_owners    = ["leads"]
     base_reviewers = ["leads", "contributors"]
     visibility     = "public"
