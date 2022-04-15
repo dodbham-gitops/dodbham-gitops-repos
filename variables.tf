@@ -11,7 +11,6 @@ variable "owners_aliases" {
   description = "owners aliases file"
 }
 
-# variable "vault_token" {
-#   description = "dynamically injected vault token"
-#   sensitive   = true
-# }
+variable "oc-robot-token" {
+  description = "github token for oc-ci-robot, injected by tf cloud"
+}
