@@ -11,7 +11,13 @@ repositories = {
     base_reviewers = ["leads", "contributors"]
     visibility     = "public"
   }, 
-  chalupa-bot-config = {
+  img-updater-bot = {
+    description    = "image layer updater bot, written in node+typescript"
+    base_owners    = ["leads"]
+    base_reviewers = ["leads", "contributors"]
+    visibility     = "public"
+  },
+  dodbham-app-config = {
     description    = "chalupa bot deployment config repo"
     base_owners    = ["leads"]
     base_reviewers = ["leads", "contributors"]
