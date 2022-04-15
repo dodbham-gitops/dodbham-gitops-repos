@@ -14,6 +14,6 @@ repositories = {
 }
 
 owners_aliases = {
-  contributors         = ["olivercodes"]
-  leads                = ["olivercodes"]
+  contributors         = []
+  leads                = ["olivercodes", "kingdonb"]
 }
