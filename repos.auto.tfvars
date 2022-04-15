@@ -10,6 +10,12 @@ repositories = {
     base_owners    = ["leads"]
     base_reviewers = ["leads", "contributors"]
     visibility     = "public"
+  }, 
+  test-github-org-module-w = {
+    description    = "terraform module testing"
+    base_owners    = ["leads"]
+    base_reviewers = ["leads", "contributors"]
+    visibility     = "public"
   }
 }
 
