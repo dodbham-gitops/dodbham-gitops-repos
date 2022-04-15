@@ -13,6 +13,6 @@ repositories = {
 }
 
 owners_aliases = {
-  infra-contributors         = ["olivercodes"]
-  infra-leads                = ["olivercodes"]
+  contributors         = ["olivercodes"]
+  leads                = ["olivercodes"]
 }
