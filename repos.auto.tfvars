@@ -5,14 +5,20 @@ org_config = {
 }
 
 repositories = {
-  test-github-org-module = {
-    description    = "terraform module testing"
+  chalupa-bot = {
+    description    = "chalupa discord microservice, written in rust"
     base_owners    = ["leads"]
     base_reviewers = ["leads", "contributors"]
     visibility     = "public"
   }, 
-  test-github-org-module-w = {
-    description    = "terraform module testing"
+  chalupa-bot-config = {
+    description    = "chalupa bot deployment config repo"
+    base_owners    = ["leads"]
+    base_reviewers = ["leads", "contributors"]
+    visibility     = "public"
+  },
+  dodbham-infra-as-code = {
+    description    = "dodbham clusters and flux bootstraps"
     base_owners    = ["leads"]
     base_reviewers = ["leads", "contributors"]
     visibility     = "public"
