@@ -1,0 +1,29 @@
+name: Apply
+on:
+  issue_comment:
+    types: [created]
+    
+jobs:
+  # This workflow contains a single job called "apply". It only runs on the /ok-to-apply command
+  tf-apply:
+    runs-on: [ cloud ]
+    if: contains(github.event.comment.html_url, '/pull/') && startsWith( github.event.comment.body, '/ok-to-apply' )
+    steps:
+      - id: get-ref
+        name: Get branch name
+        uses: actions/github-script@v3
+        with:
+          result-encoding: string
+          script: |
+            const response = await github.pulls.get({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: context.payload.issue.number
+            });
+
+            return response.data.head.ref;
+
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ steps.get-ref.outputs.result }}
+

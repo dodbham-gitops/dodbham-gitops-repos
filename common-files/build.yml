@@ -1,0 +1,16 @@
+name: CI
+on:
+  pull_request:
+    branches: [ main ]
+    
+env:
+  output-dir: output
+    
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    runs-on: [ cloud ]
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+
