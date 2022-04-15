@@ -1,5 +1,5 @@
 org_config = {
-  org_name       = "Terratest"
+  org_name       = "dodbham-gitops"
   default_branch = "main"
   base_url       = "https://github.com/"
 }
