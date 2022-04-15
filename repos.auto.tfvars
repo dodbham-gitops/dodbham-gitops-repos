@@ -9,6 +9,7 @@ repositories = {
     description    = "terraform module testing"
     base_owners    = ["leads"]
     base_reviewers = ["leads", "contributors"]
+    visibility     = "public"
   }
 }
 
