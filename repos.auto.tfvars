@@ -17,7 +17,7 @@ repositories = {
     base_reviewers = ["leads", "contributors"]
     visibility     = "public"
   },
-  dodbham-app-config = {
+  chalupa-bot-app-config = {
     description    = "chalupa bot deployment config repo"
     base_owners    = ["leads"]
     base_reviewers = ["leads", "contributors"]
