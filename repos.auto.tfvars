@@ -17,6 +17,12 @@ repositories = {
     base_reviewers = ["leads", "contributors"]
     visibility     = "public"
   },
+  img-updater-config = {
+    description    = "img updater config repo"
+    base_owners    = ["leads"]
+    base_reviewers = ["leads", "contributors"]
+    visibility     = "public"
+  },
   chalupa-bot-app-config = {
     description    = "chalupa bot deployment config repo"
     base_owners    = ["leads"]
