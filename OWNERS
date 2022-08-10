@@ -1,4 +1,4 @@
 approvers:
-- "leads"
+- "dodbham-gitops-owners"
 reviewers:
-- "contributors"
+- "dodbham-gitops-contributors"
