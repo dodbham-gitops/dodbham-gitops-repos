@@ -1,7 +1,5 @@
 aliases:
   contributors:
-    - kingonb
-    - olivercodes
+    - dodbham-gitops-contributors
   leads:
-    - kingonb
-    - olivercodes
+    - dodbham-gitops-owners
