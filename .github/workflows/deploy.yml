@@ -23,8 +23,8 @@ jobs:
 
             return response.data.head.ref;
       - uses: olivercodes/owners-slash-command@v1.0.2
-        with:
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - uses: actions/checkout@v2
         with:
           ref: ${{ steps.get-ref.outputs.result }}
