@@ -24,7 +24,7 @@ jobs:
             return response.data.head.ref;
       - uses: olivercodes/owners-slash-command@v1.0.8
         env:
-          GITHUB_TOKEN: ${{ secrets.ORG_TOKEN }}
+          ORG_TOKEN: ${{ secrets.ORG_TOKEN }}
       - uses: actions/checkout@v2
         with:
           ref: ${{ steps.get-ref.outputs.result }}
