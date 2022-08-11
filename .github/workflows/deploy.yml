@@ -30,7 +30,7 @@ jobs:
         uses: peter-evans/create-or-update-comment@v2
         if: failure() && steps.perm.outcome == 'failure'
         with:
-          issue-number: ${{ github.event.issue.id }}
+          issue-number: ${{ github.event.issue.number }}
           body: |
             This is a multi-line test comment
             - Created by [test][1]
