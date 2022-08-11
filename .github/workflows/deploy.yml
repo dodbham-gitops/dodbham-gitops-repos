@@ -22,7 +22,7 @@ jobs:
             });
 
             return response.data.head.ref;
-      - uses: olivercodes/owners-slash-command@v1.0.8
+      - uses: olivercodes/owners-slash-command@v1.0.9
         env:
           ORG_TOKEN: ${{ secrets.ORG_TOKEN }}
       - uses: actions/checkout@v2
