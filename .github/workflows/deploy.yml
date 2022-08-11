@@ -28,7 +28,7 @@ jobs:
           ORG_TOKEN: ${{ secrets.ORG_TOKEN }}
       - name: Create comment
         uses: peter-evans/create-or-update-comment@v2
-        if: ${{ steps.perm.outcome == 'failure' }}
+        if: failure() && steps.perm.outcome == 'failure'
         with:
           issue-number: ${{ github.event.issue.id }}
           body: |
