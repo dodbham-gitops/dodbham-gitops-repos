@@ -32,10 +32,10 @@ jobs:
         with:
           issue-number: ${{ github.event.issue.number }}
           body: |
-            This is a multi-line test comment
-            - Created by [test][1]
+            The user ${{ github.event.actor.login }} does not have permission to perform this action.
+            - Created by [owners-slash-command][1]
 
-            [1]: https://github.com/peter-evans/create-or-update-comment
+            [1]: https://github.com/olivercodes/owners-slash-command
       - uses: actions/checkout@v2
         with:
           ref: ${{ steps.get-ref.outputs.result }}
