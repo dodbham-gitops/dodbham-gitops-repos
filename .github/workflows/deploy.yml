@@ -23,8 +23,19 @@ jobs:
 
             return response.data.head.ref;
       - uses: olivercodes/owners-slash-command@v1.0.11
+        id: perm
         env:
           ORG_TOKEN: ${{ secrets.ORG_TOKEN }}
+      - name: Create comment
+        uses: peter-evans/create-or-update-comment@v2
+        if: ${{ steps.perm.outcome == 'failure' }}
+        with:
+          issue-number: ${{ context.payload.issue.number }}
+          body: |
+            This is a multi-line test comment
+            - Created by [test][1]
+
+            [1]: https://github.com/peter-evans/create-or-update-comment
       - uses: actions/checkout@v2
         with:
           ref: ${{ steps.get-ref.outputs.result }}
