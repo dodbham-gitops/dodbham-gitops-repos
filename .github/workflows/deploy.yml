@@ -22,7 +22,7 @@ jobs:
             });
 
             return response.data.head.ref;
-      - uses: olivercodes/owners-slash-command@v1.0.5
+      - uses: olivercodes/owners-slash-command@v1.0.6
         env:
           GITHUB_TOKEN: ${{ secrets.ORG_TOKEN }}
       - uses: actions/checkout@v2
