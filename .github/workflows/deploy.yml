@@ -6,7 +6,7 @@ on:
 jobs:
   # This workflow contains a single job called "apply". It only runs on the /ok-to-apply command
   tf-apply:
-    runs-on: [ cloud ]
+    runs-on: ubuntu-latest
     if: contains(github.event.comment.html_url, '/pull/') && startsWith( github.event.comment.body, '/ok-to-apply' )
     steps:
       - id: get-ref
