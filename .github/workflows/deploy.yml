@@ -32,7 +32,7 @@ jobs:
         with:
           issue-number: ${{ github.event.issue.number }}
           body: |
-            The user ${{ github.event.actor.login }} does not have permission to perform this action.
+            The user ${{ github.actor }} does not have permission to perform this action.
             - Created by [owners-slash-command][1]
 
             [1]: https://github.com/olivercodes/owners-slash-command
